@@ -14,16 +14,16 @@ export default function Home() {
   return (
     <div className="flex justify-center items-center h-screen">
       <div className="  flex flex-col justify-center items-center gap-4">
-        <div className="rounded-md max-w-[80%] p-3 bg-[#eaf2ff]">
+        <div className="rounded-xl sm:max-w-[80%] md:max-w-[60%] w-full p-3 bg-[#eaf2ff]">
           <div className="flex justify-between py-2">
             <div className="flex gap-2">
               <h1 className="font-semibold text-sm">Vanilla AI</h1>
-              <span className="text-[#999999] text-sm">Suggested</span>
+              <span className="text-[#999999] text-xs">Suggested</span>
             </div>
 
             <div className="flex gap-2">
-              <RefreshCcw width={20} height={20} strokeWidth={1.7} />
-              <span className="font-semibold text-sm">Regenerate</span>
+              <RefreshCcw width={16} height={16} strokeWidth={1.7} />
+              <span className="font-semibold text-xs">Regenerate</span>
             </div>
           </div>
 
@@ -41,13 +41,13 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="rounded-md max-w-[80%] min-w-[80vw] border-[1px] border-[#999999b1] p-3 shadow-lg">
+        <div className="rounded-xl sm:max-w-[80%] md:max-w-[60%] w-full  border-[1px] border-[#999999b1] p-3 shadow-lg">
           <input
             type="text"
-            className="w-full text-sm outline-none border-none py-2"
+            className="w-full text-sm outline-none border-none py-2 pb-4"
             placeholder="Type your message here"
           />
-          <div className="flex justify-between py-2">
+          <div className="flex justify-between py-1">
             <div className="flex gap-4">
               <div className="flex gap-4 border-r-[2px] border-[#99999951] items-center justify-center pr-4">
                 <StickyNote
@@ -95,7 +95,7 @@ export default function Home() {
                   height={20}
                   strokeWidth={1.7}
                 />
-                <span className="font-semibold text-sm text-[#62636c]">Quick reply with AI</span>
+                <span className="font-semibold text-sm text-[#62636c] text-wrap">Quick reply with AI</span>
 
               </div>
             </div>
